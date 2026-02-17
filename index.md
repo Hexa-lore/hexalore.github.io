@@ -1,4 +1,7 @@
-# Hi it's Hexalore!
+---
+layout: home
+title: Welcome
+---
 
-Welcome to my first ever blog. Life has been hectic recently and I wanted to make a space where I can write what I've been feeling.
-I believe here atleast I can share some of my thoughts.
+Hi, I’m Hexalore 👋  
+Welcome to my blog.

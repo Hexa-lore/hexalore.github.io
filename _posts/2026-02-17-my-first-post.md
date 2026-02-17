@@ -1,9 +1,7 @@
 ---
 layout: post
-title: "My First Blog Post"
+title: "My First Post"
 date: 2026-02-17
 ---
 
-This is my first post hosted entirely on GitHub Pages 🎉
-
-I built this myself!
+This blog is powered by Jekyll and hosted on GitHub Pages 🎉
