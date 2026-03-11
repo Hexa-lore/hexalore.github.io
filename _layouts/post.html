@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <span>📅 {{ page.date | date: "%B %d, %Y" }}</span>
+      {%- if page.author -%}
+        <br><span>✍️ By {{ page.author }}</span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
+
+<nav style="margin-top: 40px; text-align: center; border-top: 4px dashed #c89f6b; padding-top: 20px;">
+  <a href="{{ '/' | relative_url }}" style="font-size: 14px;">← Back to Home</a>
+</nav>

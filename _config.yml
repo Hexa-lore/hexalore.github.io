@@ -1,3 +1,23 @@
 title: Hexalore
 description: My personal blog
 theme: minima
+
+# Custom CSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima customization
+minima:
+  skin: dark
+
+# Exclude files from build
+exclude:
+  - node_modules
+  - vendor

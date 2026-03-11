@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class="home-hero">
+  <h1>{{ site.title }}</h1>
+  <div class="home-intro">
+    <p>{{ page.content }}</p>
+  </div>
+</div>
+
+<div class="plant-section">
+  <p style="text-align: center; font-family: 'Courier New', monospace; font-size: 12px; color: #7a9b8e; margin: 40px 0;">
+    🌿 A garden of thoughts and ideas 🌿
+  </p>
+</div>
+
+<h2 style="text-align: center; margin: 40px 0; font-size: 24px;">📝 Latest Posts</h2>
+
+{%- if site.posts.size > 0 -%}
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+      <h3 style="margin: 0; font-size: 18px;">
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      {%- if post.excerpt -%}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+      {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
